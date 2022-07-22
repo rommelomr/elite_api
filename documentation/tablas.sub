@@ -1,0 +1,132 @@
+identification_types -> guardará los tipos de documento de identificacion
+
+	name: varchar(24)
+
+
+persons -> guardará los datos generales de los clientes y los usuarios
+
+	name: varchar(255)
+
+	identification_type_id: (fk)
+
+	identification_card: varchar(25)
+
+	phone: varchar(22)
+
+	email: varchar(255)
+
+
+users -> guardará los datos de loggin de los empleados
+	
+	email: varchar(24)
+
+	password: varchar(255)
+
+	status: tinyint //1 o 0, activo e inactivo respectivamente
+
+	role: identificará el rol del usuario // Administrador (A) y Conductor (C)
+
+
+car_drivers -> guardará la información de los conductores
+
+	user_id: (fk)
+
+	status: tinyint //Ocupado (0) y Disponible (1)
+
+
+clients -> guardará información sobre el cliente
+
+	person_id: (fk)
+
+
+terminals -> guardará los terminales de pasajeros
+
+	name: varchar(60)
+
+
+reservations -> guardará los datos de las reservas
+
+	client_id: (fk)
+
+	vehicle_id: (fk)
+
+	reception_date: date
+	reception_time: time
+
+	devolution_date: date
+	devolution_time: time
+
+	city: varchar(50)
+
+	receiver_car_driver_id: (fk)
+
+	devolution_car_driver_id: (fk)
+
+	payment_method_id: (fk)
+
+	reception_terminal_id: (fk)
+
+	devolution_terminal_id: (fk)
+
+	has_luggage: tinyint //1 o 0, si y no respectivamente
+
+	flight_number: varchar(16)
+
+	invoice_required: tinyint //1 o 0, si y no respectivamente
+
+	status: tinyInt // en espera (0), en estacionamiento (1) coche devuelto (2), reservacion cancelada (3)
+
+	observation: varchar(255)
+
+	paid: tinyInt // 0: No ha sido pagado; 1: pagado 
+
+brands -> guardará la marca de los vehículos
+
+	name: varchar(20)
+
+models -> guardará el modelo de los vehículos
+
+	name: varchar(20)
+
+vehicles -> guardará los datos de los vehículos de los clientes
+
+	plaque: varchar(12)
+
+	brand_id: (fk)
+
+	model_id: (fk)
+
+	color: varchar(20)
+
+services -> guardará los servicios adicionales que ofreceŕa la empresa a sus clientes
+
+	name: varchar(50)
+
+	price: double(6,2)
+
+
+reservation_service -> tabla pivote entre servicios y reservaciones. Guardará los servicios extra que el cliente decida adquirir
+
+	reservation_id: (fk)
+
+	servece_id: (fk)
+
+
+payment_methods -> guardará los metodos de pago de las reservaciones
+
+	name: varchar(20)
+
+
+client_service -> tabla pivote entre clientes y servicios. Guardará uno de cada servicio que un cliente ha adquirido 
+
+	client_id: (fk)
+	service_id: (fk)
+
+
+tpv_transactions:
+
+	id: (pk)
+	ds_signature_version: varchar(25)
+	ds_merchant_parameters: text
+	ds_signature: varchar(25)
+	status: tinyInteger 

@@ -1,0 +1,137 @@
+identification_types -> guardará los tipos de documento de identificacion
+
+	name: nombre del tipo de documento //NIF, INE o PASAPORTE
+
+
+persons -> guardará los datos generales de los clientes y los usuarios
+
+	name: nombre completo de la persona
+
+	identification_type_id: (fk)
+
+	identification_card: numero de cédula
+
+	phone: número de teléfono
+
+	email: correo de la persona
+
+
+users -> guardará los datos de loggin de los empleados
+
+	email: nombre de usuario
+
+	password: contraseña
+
+	status: estado del usuario //Activo (1) o inactivo (0)
+
+	role: identificará el rol del usuario // Administrador (A) y Conductor (C)
+
+
+car_drivers -> guardará la información de los conductores
+
+	user_id: (fk)
+
+	status: Indicará si el conductor está buscando/entregando un coche o si está disponible
+
+
+clients -> guardará información sobre el cliente
+
+	person_id: (fk)
+
+
+terminals -> guardará los terminales de pasajeros
+
+	name: varchar(60)
+
+
+reservations -> guardará los datos de las reservas
+
+	client_id: (fk)
+
+	vehicle_id: (fk)
+
+	receiver_car_driver_id: (fk)
+
+	devolution_car_driver_id: (fk)
+
+	payment_method_id: (fk)
+
+	city: ciudad de donde regresa el cliente
+
+	reception_terminal_id: (fk)
+
+	devolution_terminal_id: (fk)
+	
+	reception_date: fecha en que la empresa irá a recibir el vehículo
+	reception_time: hora en que la empresa irá a recibir el vehículo
+
+	devolution_date: fecha en que la empresa irá devolver el vehículo
+	devolution_time: hora en que la empresa irá devolver el vehículo
+
+	reception_terminal: terminal en el que la empresa irá a recibir el vehículo
+	devolution_terminal: terminal en el que la empresa irá a buscar el vehículo
+
+	has_luggage: indicará si el dueño del vehículo lleva equipaje o no
+
+	flight_number: numero de vuelo de regreso del dueño del vehículo
+
+	invoice_required: indicará si el dueño requerira factura
+
+	status: indicará si la reservación esta en espera (hay que ir a buscar el coche), por devolver (el coche está en el estacionamiento), devuelta (se le entregó el coche al cliente) o cancelada (la cancela el admin)
+
+	paid: indicará si la reservación ya fue pagada o no
+
+	observation: observación escrita por el dueño del vehículo
+
+
+brands -> guardará la marca de los vehículos
+
+	name: nombre de la marca
+
+
+models -> guardará el modelo de los vehículos
+
+	name: nombre del modelo
+
+
+vehicles -> guardará los datos de los vehículos de los clientes
+
+	plaque: placa del vehículo
+
+	brand_id: (fk)
+
+	model_id: (fk)
+
+	color: color del vehículo
+
+
+services -> guardará los servicios adicionales que ofreceŕa la empresa a sus clientes
+
+	name: nombre del servicio
+
+	price: precio del servicio
+
+reservation_service -> tabla pivote entre servicios y reservaciones. Guardará los servicios extra que el cliente decida adquirir para la reserva en cuestión
+
+	reservation_id: (fk)
+
+	servece_id: (fk)
+
+
+payment_methods -> guardará los metodos de pago de las reservaciones
+
+	name: formas de pago
+
+client_service -> tabla pivote entre clientes y servicios. Guardará uno de cada servicio que un cliente ha adquirido 
+
+	client_id: (fk)
+	service_id: (fk)
+
+
+tpv_transactions:
+
+	id: (pk)
+	ds_signature_version: indica la version de la firma
+	ds_merchant_parameters: guarda en base64 los parámetros de la transacción
+	ds_signature: firma de la transacción
+	status: Estado de la transaccion. Entero que indica si la transaccion virtual fue realizada con éxito (1), si no se ha encontrado una reservación para esta transacción (2), si la transaccion fue rechazada por el banco (3), o si el valor del id de la transacción recibido por el Ds_MerchantData no es un numero (4)
