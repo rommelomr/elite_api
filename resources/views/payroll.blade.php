@@ -4,7 +4,7 @@
 </div>
 <div style="float:right;width:50%" align="right">
 <b>www.eliteparking.es</b><br>
-Calle Gumercindo Llórente 77, Madrid</br>
+Calle Gumercindo Llorente 77, Madrid</br>
 28022 de Madrid<br>
 Correo: contacto@eliteparking.es<br>
 Reservas: +34 910 94 57 30<br>

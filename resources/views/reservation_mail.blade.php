@@ -13,7 +13,7 @@
 </div>
 <div style="float:right;width:50%" align="right">
 <b>www.eliteparking.es</b><br>
-Calle Gumercindo Llórente 77, Madrid</br>
+Calle Gumercindo Llorente 77, Madrid</br>
 28022 de Madrid<br>
 Correo: contacto@eliteparking.es<br>
 Reservas: +34 910 94 57 30<br>
@@ -104,7 +104,7 @@ Reservas: +34 910 94 57 30<br>
   <p>Cualquier duda sobre nuestro servicio póngase en contacto con atención al cliente (+34 910 94 57 30) o en la dirección de email: contacto@eliteparking.es</p>
   <!--Letra pequeña-->
   <p>El depositante declara conocer las tarifas en vigor y aceptar las normas y condiciones generales del presente servicio promocionado en nuestra web. Elite parking se reserva el derecho de mover el vehículo entre otro parques e instalaciones de otras entidades concertadas para mejor optimización de los espacios de aparcamiento que dispone Elite parking. No nos responsabilizamos por roturas aisladas de cristales. La versión completa de las condiciones generales de nuestro servicio se encuentra en www.eliteparking.es.</p>
-  <p>Sus datos son recogidos con el único propósito de registrar su reserva, facilitar reservas futuras y encuestas de satisfacción. En cumplimiento de Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, puede ejercer los derechos de acceso, rectificación, cancelación, limitación, oposición y portabilidad de manera gratuita mediante correo electrónico a : contacto@eliteparking.es o bien en la siguiente dirección: Calle Gumercindo Llórente 77, Madrid, 28022 de Madrid.</p>
+  <p>Sus datos son recogidos con el único propósito de registrar su reserva, facilitar reservas futuras y encuestas de satisfacción. En cumplimiento de Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, puede ejercer los derechos de acceso, rectificación, cancelación, limitación, oposición y portabilidad de manera gratuita mediante correo electrónico a : contacto@eliteparking.es o bien en la siguiente dirección: Calle Gumercindo Llorente 77, Madrid, 28022 de Madrid.</p>
 </div>
 <center>
   <img width="300" height="240" src="{{asset('/assets/elite.png')}}"><br>

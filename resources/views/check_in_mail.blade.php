@@ -41,7 +41,7 @@
 
 <p>El depositante declara conocer las tarifas en vigor y aceptar las normas y condiciones generales del presente servicio publicadas en la web. Elite parking se reserva el derecho de mover el vehículo entre otros parques e instalaciones de otras entidades concertadas para mejor optimización de los espacios de aparcamiento de que dispone Elite parking. No nos responsabilizamos por roturas aisladas de vidrios. La versión completa de las normas y condiciones generales se encuentran en www.eliteparking.es</p>
 
-<p>Sus datos son recogidos con el único propósito de registrar su reserva, facilitar reservas futuras y encuestas de satisfacción. En aras del cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, puede ejercer los derechos de acceso, rectificación, cancelación, limitación, oposición y portabilidad de manera gratuita mediante correo electrónico a: contacto@eliteparking.es o bien en la siguiente dirección: Calle Gumercindo Llórente 77, Madrid, 28022 de Madrid.</p>
+<p>Sus datos son recogidos con el único propósito de registrar su reserva, facilitar reservas futuras y encuestas de satisfacción. En aras del cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, puede ejercer los derechos de acceso, rectificación, cancelación, limitación, oposición y portabilidad de manera gratuita mediante correo electrónico a: contacto@eliteparking.es o bien en la siguiente dirección: Calle Gumercindo Llorente 77, Madrid, 28022 de Madrid.</p>
 
 <p>Copyright © eliteparking.es, todos los derechos reservados.</p>
 
