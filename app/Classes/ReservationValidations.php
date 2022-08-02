@@ -46,27 +46,27 @@ class ReservationValidations{
 
         $validator = Validator::make($req->all(),[
 
-            'client_full_name' => ['regex:/^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/'],
+            'client_full_name' => ['required'],
 
-            'client_phone' => ['numeric'],
+            'client_phone' => ['regex:/^[0-9()+\- ]+$/'],
 
             'client_email' => ['email'],
 
-            'client_document_number' => ['regex:/^[a-zA-Z0-9ñÑ-]+$/'],
+            'client_document_number' => ['required'],
 
-            'plaque' => ['regex:/^[a-zA-Z0-9ñÑ-]+$/'],
+            'plaque' => ['required'],
 
-            'brand' => ['regex:/^[a-zA-Z0-9ñÑ ]+$/'],
+            'brand' => ['required'],
 
-            'model' => ['regex:/^[a-zA-Z0-9ñÑ ]+$/'],
+            'model' => ['required'],
 
-            'color' => ['regex:/^[a-zA-ZñÑ ]+$/','nullable'],
+            'color' => ['required'],
 
             'invoice' => ['boolean'],
 
             'luggage' => ['boolean'],
 
-            'flight_number' => ['regex:/^[a-zA-Z0-9ñÑ-]+$/','nullable'],
+            'flight_number' => ['required'],
 
             'document_type' => ['exists:identification_types,id'],
 
@@ -78,7 +78,7 @@ class ReservationValidations{
 
             'payment_method' => ['exists:payment_methods,id','required'],
 
-            'city' => ['regex:/^[a-zA-ZñÑ ]+$/','nullable'],
+            'city' => ['required'],
 
         ]);
 
