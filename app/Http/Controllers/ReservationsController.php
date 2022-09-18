@@ -413,7 +413,6 @@ class ReservationsController extends Controller
         ]);
       }
     }
-
     public function completeVirtualTPVTransaction(Request $request){
 
       $merchant_parameters = urldecode(base64_decode($request->Ds_MerchantParameters));
@@ -487,7 +486,6 @@ class ReservationsController extends Controller
 
       
     }
-
     public function getReservationFormData(){
 
       $prices = DB::table('prices')->select(['id','price'])->get();
@@ -498,7 +496,7 @@ class ReservationsController extends Controller
 
       $services = Responses::makeServicesArray($services);
 
-      $payment_methods = PaymentMethod::all();
+      $payment_methods = PaymentMethod::where('id','<>', 5)->get();
 
       $payment_methods = Responses::makePaymentMethodsArray($payment_methods);
 
