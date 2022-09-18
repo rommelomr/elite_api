@@ -78,7 +78,7 @@ class ReservationValidations{
 
             'payment_method' => ['exists:payment_methods,id','required'],
 
-            'city' => ['required'],
+            'city' => ['regex:/^[a-zA-ZñÑ ]+$/','nullable'],
 
         ]);
 

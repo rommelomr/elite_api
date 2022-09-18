@@ -31,7 +31,7 @@
 
 <p><b>Metodos de pagos:</b> TPV o efectivo. </p>
 
-<p><b>NOTA IMPORTANTE:</b> Si su vuelo sufre algún cambio deberá notificarlo para corregir la fecha y hora de entrega de su vehículo. Elite parking no se responsabiliza por el tiempo de espera que pueda transcurrir a su llegada si este cambio no es notificado.</p>
+<p>Si su vuelo sufre algún cambio deberá notificarlo para corregir la fecha y hora de entrega de su vehículo. Elite parking no se responsabiliza por el tiempo de espera que pueda transcurrir a su llegada si este cambio no es notificado.</p>
 
 <p>Buen viaje de regreso a casa</p>
 

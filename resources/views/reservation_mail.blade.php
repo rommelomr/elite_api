@@ -98,7 +98,7 @@ Reservas: +34 910 94 57 30<br>
       A su regreso, una vez haya recogido su equipaje de facturación, deberá llamar a nuestro personal de asistencia en aeropuerto (+34 623 16 46 56). Deberá presentar la copia del contrato para poder recoger el vehículo, en caso de extraviar dicho contrato deberá presentar algún documento valido que certifique que el vehículo es de su propiedad.
     </li>
     <li>
-      IMPORTANTE: recuerde que la recepción y devolución de coches entre la <u>1:00 am y las 5:00 am</u> conlleva un recargo en la tarifa de un día de servicio.</p>
+      La recepción y devolución de coches entre la <u>1:00 am y las 5:00 am</u> conlleva un recargo en la tarifa de un día de servicio.</p>
     </li>
 
   </ul>
