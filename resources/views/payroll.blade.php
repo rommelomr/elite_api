@@ -44,7 +44,7 @@ Reservas: +34 910 94 57 30<br>
 
 <p>Le solicitamos comunicarse con nuestro servicio de asistencia en aeropuerto (+34 623 16 46 56) 20 - 30 minutos antes de llegar a la entrega de su vehículo y al aterrizar de su viaje de vuelta para evitar esperas.</p>
 
-<p>Recuerde que la recepción y devolución de coches entre la <u>1:00 am y las 5:00 am</u> conlleva un recargo en la tarifa de un día de servicio.</p>
+<p>La recepción y devolución de coches se realiza entre las <u>5:00 am y las 1:00 am</u>. Posterior a nuestro horario conllevará un recargo de un día de servicio y el coche será entregado en nuestro horario laborable.</p>
 
 <br><br><br><br><br>
 <center>
